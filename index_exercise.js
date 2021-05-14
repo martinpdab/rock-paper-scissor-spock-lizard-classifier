@@ -71,12 +71,10 @@ function handleButton(elem){
 			spockSamples++;
 			document.getElementById("spocksamples").innerText = "Spock samples:" + spockSamples;
 			break;
-    case "4":
-      lizardSamples++;
-      document.getElementById("lizardsamples").innerText = "Lizard samples:" + lizardSamples;   
-
-		
-            
+    		case "4":
+      			lizardSamples++;
+      			document.getElementById("lizardsamples").innerText = "Lizard samples:" + lizardSamples;
+			break;
 	}
 	label = parseInt(elem.id);
 	const img = webcam.capture();
@@ -110,9 +108,9 @@ async function predict() {
             
         // Add a case for lizard samples.
         // HINT: Look at the previous cases.
-    case 3:
-      predictionText = "I see Lizard";
-      break;
+    		case 4:
+      			predictionText = "I see Lizard";
+      			break;
         // YOUR CODE HERE 
 	
             
