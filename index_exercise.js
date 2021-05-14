@@ -42,7 +42,7 @@ async function train() {
  
   let loss = 0;
   model.fit(dataset.xs, dataset.ys, {
-    epochs: 10,
+    epochs: 25,
     callbacks: {
       onBatchEnd: async (batch, logs) => {
         loss = logs.loss.toFixed(5);
